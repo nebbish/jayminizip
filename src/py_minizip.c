@@ -77,6 +77,20 @@
 #define WRITEBUFFERSIZE (16384)
 #define MAXFILENAME     (256)
 
+#define PWD_VERBOSE
+
+#if defined(PWD_VERBOSE)
+#define print_pwd(p) print_pwd_internal(p);
+#else
+#define print_pwd(p)
+#endif 
+
+void print_pwd_internal(const char* password)
+{
+    const char *pwd = password != NULL ? password : "(null)";
+    printf("jayminizip trace - password:  [%s] length: %zd\n", pwd, strlen(password));
+}
+
 PyObject* pyerr_msg = NULL;
 
 extern PyObject *py_uncompress(PyObject *self, PyObject *args);
@@ -243,6 +257,8 @@ int _compress(const char** srcs, int src_num, const char** srcspath, int srcpath
         pyerr_msg = PyErr_Format(PyExc_IOError, "error opening %s", dst);
         err = ZIP_ERRNO;
     }
+
+    print_pwd(password);
 
     for (i = 0; i < src_num && (err == ZIP_OK); i++) {
 
