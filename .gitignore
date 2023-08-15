@@ -2,9 +2,16 @@ build/
 dist/
 memo/
 MANIFEST
-pyminizip.egg-info
+jayminizip.egg-info
 */**/*.so
 */**/*.o
 */**/\#*
 */**/.\#*
 */**/~*
+
+##
+## IDE FIles
+##
+.sw?
+_.sw?
+.*.sw?

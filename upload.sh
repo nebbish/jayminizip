@@ -1,1 +1,1 @@
-rm -rf ./dist ./pyminizip.egg-info && python3 setup.py sdist && twine upload dist/*
+rm -rf ./dist ./jayminizip.egg-info && python3 setup.py sdist && twine upload dist/*

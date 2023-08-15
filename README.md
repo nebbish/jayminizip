@@ -1,4 +1,4 @@
-## pyminizip
+## jayminizip
 
 To create a password encrypted zip file in python.
 And the zip file is able to extract in WINDOWS.
@@ -11,7 +11,7 @@ License: zlib/libpng License.
 
 ## Install
 ```
-$ pip install pyminizip
+$ pip install jayminizip
 ```
 
 ## Install zlib
@@ -28,7 +28,7 @@ $ brew install zlib
 This package just provides three functions.
 
 ```
-pyminizip.compress("/srcfile/path.txt", "file_path_prefix", "/distfile/path.zip", "password", int(compress_level))
+jayminizip.compress("/srcfile/path.txt", "file_path_prefix", "/distfile/path.zip", "password", int(compress_level))
 ```
 
   Args:
@@ -42,7 +42,7 @@ pyminizip.compress("/srcfile/path.txt", "file_path_prefix", "/distfile/path.zip"
   - always returns None
 
 ```
-pyminizip.compress_multiple([u'pyminizip.so', 'file2.txt'], [u'/path_for_file1', u'/path_for_file2'], "file.zip", "1233", 4, progress)
+jayminizip.compress_multiple([u'jayminizip.so', 'file2.txt'], [u'/path_for_file1', u'/path_for_file2'], "file.zip", "1233", 4, progress)
 ```
 
   Args:
@@ -57,7 +57,7 @@ pyminizip.compress_multiple([u'pyminizip.so', 'file2.txt'], [u'/path_for_file1',
   - always returns None
 
 ```
-pyminizip.uncompress("/srcfile/path.zip", "password", "/dirtoextract", int(withoutpath))
+jayminizip.uncompress("/srcfile/path.zip", "password", "/dirtoextract", int(withoutpath))
 ```
 
   Args:

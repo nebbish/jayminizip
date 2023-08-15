@@ -1,8 +1,8 @@
-pyminizip:
+jayminizip:
 
   zlib license
 
-  See contributors https://github.com/smihica/pyminizip/graphs/contributors
+  See contributors https://github.com/smihica/jayminizip/graphs/contributors
 
   ------------------------------
 

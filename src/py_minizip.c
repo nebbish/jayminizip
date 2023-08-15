@@ -659,7 +659,7 @@ static PyMethodDef py_minizip_methods[] = {
 #if PY_MAJOR_VERSION >= 3
 static struct PyModuleDef moduledef = {
         PyModuleDef_HEAD_INIT,
-        "pyminizip",
+        "jayminizip",
         ext_doc,
         -1,
         py_minizip_methods,
@@ -669,13 +669,13 @@ static struct PyModuleDef moduledef = {
         NULL
 };
 
-PyObject* PyInit_pyminizip(void) {
+PyObject* PyInit_jayminizip(void) {
     PyObject *module = PyModule_Create(&moduledef);
     return module;
 }
 
 #else
-void initpyminizip(void) {
-    Py_InitModule3("pyminizip", py_minizip_methods, ext_doc);
+void initjayminizip(void) {
+    Py_InitModule3("jayminizip", py_minizip_methods, ext_doc);
 }
 #endif

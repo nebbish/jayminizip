@@ -16,12 +16,12 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name = 'pyminizip',
+    name = 'jayminizip',
     version = '0.2.6',
     description = 'A minizip wrapper - To create a password encrypted zip file in python.',
-    author='Shin Aoyama',
-    author_email = "smihica@gmail.com",
-    url = "https://github.com/smihica/pyminizip",
+    author='Jason Singer',
+    author_email = "nebbish@12esults.com",
+    url = "https://github.com/nebbish/jayminizip",
     download_url = "",
     keywords = ["zip", "file", "compress", "password", "encryption"],
     classifiers = [
@@ -37,7 +37,7 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
     ext_modules=[
-        Extension(name="pyminizip",
+        Extension(name="jayminizip",
                   sources=SOURCES,
                   include_dirs=['src','zlib-1.2.11','zlib-1.2.11/contrib/minizip'],
                   )
